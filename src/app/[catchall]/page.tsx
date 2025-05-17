@@ -1,10 +1,5 @@
-type CatchallPageProps = {
-  params: {
-    catchall: string;
-  };
-};
 
-const CatchallPage = async ({ params }: CatchallPageProps) => {
+const CatchallPage = async ({ params }: { params: Promise<{ catchall: string }> }) => {
   const { catchall } = await params;
 
   return (

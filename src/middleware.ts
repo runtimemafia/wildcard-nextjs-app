@@ -8,7 +8,7 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl;
   const host = request.headers.get("host") || "";
   const subdomain = host.split(".")[0];
-  const path = url.pathname;
+  // const path = url.pathname;
 
   //   if (subdomain && !excludedSubdomains.includes(subdomain) && validPaths.includes(path)) {
   //     url.pathname = `/${subdomain}${path}`; // For now, we are removing the /temple/ prefix
